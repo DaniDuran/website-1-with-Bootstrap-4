@@ -8,11 +8,24 @@ h1 {
   line-height: 80px;
 }
 
+h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
 p {
   font-size: 18px;
   color: slategray;
   line-height: 1.8;
   margin-bottom: 0;
+}
+
+section {
+  padding: 120px 0;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .top-margin-large-xs {
@@ -27,23 +40,23 @@ p {
   margin-top: 60px;
 }
 
-.btn{
-    font-size: 14px;
-    padding: 15px 26px;
-    min-width: 160px;
-    border-radius: 2px;
-    display: inline-block;
+.btn {
+  font-size: 14px;
+  padding: 15px 26px;
+  min-width: 160px;
+  border-radius: 2px;
+  display: inline-block;
 }
 
-.btn-light{
-    background-color: snow;
-    color: #1a1a1a;
-    border: 2px solid snow;    
+.btn-light {
+  background-color: snow;
+  color: #1a1a1a;
+  border: 2px solid snow;
 }
 
-.btn i{
-    font-size: 14px;
-    margin-left:10px;
+.btn i {
+  font-size: 14px;
+  margin-left: 10px;
 }
 
 .navbar {
@@ -72,6 +85,49 @@ p {
   outline: none;
 }
 
+.content-center {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+  }
+  
+  .portafolio-container {
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  
+  .portafolio-details {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    z-index: 9000;
+  }
+  .portafolio-details h2{
+      margin-bottom: 0px;
+  }
+  .portafolio-details a p,
+  .portafolio-details a h2 {
+    color: snow;
+  }
+  
+  .portafolio-container img {
+      -moz-transition:  all 0.8s;
+      -webkit-transition:  all 0.8s;
+      transition: scale(1.2);
+  }
+  
+  .portafolio-container img:hover{
+      -moz-transform: scale(1.2);
+      -webkit-transform:  scale(1.2);
+      transform: scale(1.2);
+  }
+
+.text-dark{
+    color: #1a1a1a;
+}  
+
 #banner {
   background-image: url(images/banners/banner_1.jpg);
   background-size: cover;
@@ -84,14 +140,13 @@ p {
   color: snow;
 }
 
-.content-center {
-  max-width: 800px;
-  margin: 0 auto 60px auto;
-  text-align: center;
+
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 40px;
+    line-height: normal;
+  }
 }
-
-
-@media (max-width: 575.98px) { h1{font-size: 40px; line-height: normal;} }
 /* 
 @media (max-width: 767.98px) { ... }
 
