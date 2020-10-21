@@ -28,6 +28,13 @@ a:hover {
   text-decoration: none;
 }
 
+.text-header {
+  min-height: 80vh;
+  color: whitesmoke;
+  font-family: serif;
+  text-align: center;
+}
+
 .top-margin-large-xs {
   margin-top: 15px;
 }
@@ -42,6 +49,7 @@ a:hover {
 
 .btn {
   font-size: 14px;
+  margin-top:5% ;
   padding: 15px 26px;
   min-width: 160px;
   border-radius: 2px;
@@ -87,7 +95,7 @@ a:hover {
 
 .content-center {
     max-width: 800px;
-    margin: 0 auto 60px auto;
+    margin: 20% 20%;
     text-align: center;
   }
   
@@ -129,11 +137,28 @@ a:hover {
 }  
 
 #banner {
+  width: 100%;
+  min-height: 100vh;
   background-image: url(images/banners/banner_1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  padding-top: 90px;
-  min-height: 700px;
+  background-attachment: fixed;
+  padding-top: 60px;
   color: seashell;
+}
+
+#banner:before {
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.1),
+    rgba(34, 40, 49, 1)
+  );
 }
 
 #banner p {
