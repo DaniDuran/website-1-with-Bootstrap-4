@@ -28,6 +28,11 @@ a:hover {
   text-decoration: none;
 }
 
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
 .text-header {
   min-height: 80vh;
   color: whitesmoke;
@@ -68,17 +73,17 @@ a:hover {
 }
 
 .navbar {
-  background-color: seashell;
+  background-color: #3c435a;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
   min-height: 100px;
 }
 
 .nav-link {
-  color: #1a1a1a;
+  color: #e2efff;
 }
 
 .nav-link:hover {
-  color: #424447;
+  color: #e2efff;
 }
 
 .logo-developer {
@@ -144,7 +149,7 @@ a:hover {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  padding-top: 60px;
+  padding-top: 10px;
   color: seashell;
 }
 
