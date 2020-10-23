@@ -21,7 +21,7 @@ p {
 }
 
 section {
-  padding: 120px 0;
+  padding: 80px 0;
 }
 
 a:hover {
@@ -100,7 +100,7 @@ a:hover {
 
 .content-center {
     max-width: 800px;
-    margin: 20% 20%;
+    margin: 0% 20%;
     text-align: center;
   }
   
