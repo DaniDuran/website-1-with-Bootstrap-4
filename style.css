@@ -2,6 +2,11 @@ body {
   font-family: "Titillium Web", sans-serif;
 }
 
+img{
+  max-width: 100%;
+  height: auto;
+}
+
 h1 {
   font-size: 60px;
   font-weight: 600;
@@ -11,6 +16,10 @@ h1 {
 h2 {
   font-size: 48px;
   margin-bottom: 30px;
+}
+
+h5{
+  margin-bottom: 0px;
 }
 
 p {
@@ -28,11 +37,18 @@ a:hover {
   text-decoration: none;
 }
 
+a ion-icon{
+  color: #e2efff;
+}
+
 .row {
   margin-right: 0px;
   margin-left: 0px;
 }
 
+.g-light-grey{
+  background-color: #f5f5f5;
+}
 .text-header {
   min-height: 80vh;
   color: whitesmoke;
@@ -115,7 +131,7 @@ a:hover {
     position: absolute;
     bottom: 25px;
     left: 25px;
-    z-index: 9000;
+    z-index: 900;
   }
   .portafolio-details h2{
       margin-bottom: 0px;
@@ -140,6 +156,19 @@ a:hover {
 .text-dark{
     color: #1a1a1a;
 }  
+
+.member-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.member-details {
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  color: #e2efff;
+}
 
 #banner {
   width: 100%;
@@ -169,6 +198,7 @@ a:hover {
 #banner p {
   color: snow;
 }
+
 
 
 @media (max-width: 575.98px) {
